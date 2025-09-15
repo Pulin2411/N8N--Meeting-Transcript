@@ -2,8 +2,8 @@
 
 
 Meeting Transcript Flow – n8n Automation
-📌 Overview
 
+📌 Overview
 This workflow automates the process of retrieving a meeting transcript from Google Drive, processing it with LangChain + OpenAI embeddings, storing it in Pinecone, and enabling Telegram-based Q&A using GPT.
 
 The goal is to let users query the meeting transcript in natural language via Telegram and get precise, transcript-based answers — avoiding unrelated or speculative responses.
