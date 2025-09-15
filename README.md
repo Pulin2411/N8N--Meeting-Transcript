@@ -13,16 +13,27 @@ The goal is to let users query the meeting transcript in natural language via Te
 
 Step	Node	Purpose
 1	Google Drive Trigger	Monitors a specific transcript file in Google Drive for updates.
+
 2	Download File	Fetches the transcript (PDF) whenever it changes.
+
 3	Recursive Character Text Splitter	Breaks the transcript into manageable chunks (100 tokens, 5-token overlap).
+
 4	Default Data Loader	Converts binary data (PDF) into text format for processing.
+
 5	Embeddings OpenAI	Generates embeddings (vector representations) of the transcript.
+
 6	Pinecone Vector Store	Stores embeddings in Pinecone for semantic search and retrieval.
+
 7	Telegram Trigger	Listens for incoming user messages in Telegram.
+
 8	AI Agent (LangChain)	Handles queries, retrieves relevant chunks from Pinecone, and formulates responses using GPT.
+
 9	OpenAI Chat Model	Processes natural language queries (using GPT-3.5-turbo).
+
 10	Simple Memory	Maintains short-term conversation context per Telegram user session.
+
 11	Send a Text Message	Replies to the user with AI-generated answers on Telegram.
+
 
 🔗 Tech Stack
 
