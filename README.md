@@ -4,11 +4,13 @@
 Meeting Transcript Flow – n8n Automation
 
 📌 Overview
+
 This workflow automates the process of retrieving a meeting transcript from Google Drive, processing it with LangChain + OpenAI embeddings, storing it in Pinecone, and enabling Telegram-based Q&A using GPT.
 
 The goal is to let users query the meeting transcript in natural language via Telegram and get precise, transcript-based answers — avoiding unrelated or speculative responses.
 
 ⚙️ Workflow Components
+
 Step	Node	Purpose
 1	Google Drive Trigger	Monitors a specific transcript file in Google Drive for updates.
 2	Download File	Fetches the transcript (PDF) whenever it changes.
@@ -21,7 +23,9 @@ Step	Node	Purpose
 9	OpenAI Chat Model	Processes natural language queries (using GPT-3.5-turbo).
 10	Simple Memory	Maintains short-term conversation context per Telegram user session.
 11	Send a Text Message	Replies to the user with AI-generated answers on Telegram.
+
 🔗 Tech Stack
+
 
 n8n – Workflow automation
 
@@ -36,7 +40,9 @@ Pinecone – Vector database for semantic search
 Telegram Bot API – User interaction interface
 
 
+
 🚀 Setup Instructions
+
 Import Workflow
 
 Open n8n → Go to Workflows → Import from File → Select Meeting Transcript flow.json.
