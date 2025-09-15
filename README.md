@@ -12,6 +12,7 @@ The goal is to let users query the meeting transcript in natural language via Te
 ⚙️ Workflow Components
 
 Step	Node	Purpose
+
 1	Google Drive Trigger	Monitors a specific transcript file in Google Drive for updates.
 
 2	Download File	Fetches the transcript (PDF) whenever it changes.
