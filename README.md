@@ -65,7 +65,9 @@ Test the Bot
 
 Send a query like “What was discussed about project deadlines?” to your Telegram bot and receive transcript-based answers.
 
+
 🎯 Key Features
+
 ✅ Fully Automated – No manual transcript parsing.
 
 ✅ Context-Aware Responses – Answers are grounded in transcript data.
@@ -74,7 +76,9 @@ Send a query like “What was discussed about project deadlines?” to your Tele
 
 ✅ Scalable – Works with multiple transcripts if required (with minor tweaks).
 
+
 📌 Notes
+
 Ensure your Pinecone index has 512 dimensions (to match embedding size).
 
 OpenAI usage will incur token costs based on query volume.
